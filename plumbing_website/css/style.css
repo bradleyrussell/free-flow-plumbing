@@ -1,0 +1,364 @@
+/*
+ * Free‑Flow Plumbing Website Stylesheet
+ *
+ * This file defines the global styles for the Free‑Flow Plumbing website.
+ * The colour palette is drawn from the company truck: deep blue and aqua
+ * contrasted against clean whites and soft greys.  Typography and layout
+ * are kept simple and readable, with plenty of breathing room.  Cards
+ * and buttons include subtle shadows and rounded corners for a modern,
+ * approachable feel.  Media queries ensure the design remains usable
+ * on mobile devices.
+ */
+
+/* Root variables allow for easy theme adjustments */
+:root {
+  --primary-color: #004d73;    /* dark navy from truck wrap */
+  --secondary-color: #0077a3;  /* mid tone aqua */
+  --accent-color: #00a8c6;     /* lighter aqua for highlights */
+  --light-grey: #f5f5f5;
+  --text-color: #333333;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-grey);
+  line-height: 1.6;
+}
+
+/* Utility classes */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+}
+
+/* Header and navigation */
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.hero-text {
+  flex: 1 1 450px;
+  padding: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-image {
+  flex: 1 1 450px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Section Headings */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.service-card-content {
+  padding: 1rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.service-card-content p {
+  flex: 1 1 auto;
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.service-card-content a {
+  align-self: flex-start;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.service-card-content a:hover {
+  color: var(--accent-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #ffffff;
+  padding: 2.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial {
+  background-color: var(--light-grey);
+  border-left: 4px solid var(--secondary-color);
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.testimonial p {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer div {
+  flex: 1 1 250px;
+}
+
+footer h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+footer p, footer ul {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 0.25rem;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-text, .hero-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  .service-card img {
+    height: 140px;
+  }
+  .testimonial-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sticky call button for mobile */
+.call-sticky {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10000;
+  transition: background-color 0.2s ease;
+}
+
+.call-sticky:hover {
+  background-color: var(--accent-color);
+}
+
+@media (min-width: 769px) {
+  .call-sticky {
+    display: none;
+  }
+}
