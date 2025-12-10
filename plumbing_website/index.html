@@ -3,176 +3,436 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free‑Flow Plumbing – Sewer & Underground Plumbing Experts</title>
+  <title>Free-Flow Plumbing | Full-Service Plumber & Sewer Line Specialists</title>
+  <meta name="description" content="Free-Flow Plumbing provides full-service residential and light commercial plumbing in Augusta, ME and surrounding areas. Specializing in sewer line replacement, emergency repairs, water heaters, drain cleaning, and all your plumbing needs.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header and site navigation -->
   <header>
     <div class="container">
-      <h1>Free‑Flow Plumbing</h1>
+      <div class="logo">
+        <h1>Free-Flow Plumbing</h1>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#sewer-specialty">Sewer Lines</a></li>
+          <li><a href="#why-choose-us">Why Us</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Sewer Line Replacement &amp; Underground Plumbing Done Right</h2>
-      <p>Owner‑operated and trusted in Pasco &amp; Pinellas counties since 2008, Free‑Flow Plumbing delivers honest pricing and meticulous workmanship on every job. From sewer line replacements and storm drains to complete rough‑ins for new builds, you always get master plumber Scott Russell on site.</p>
-      <a href="tel:7275144857" class="btn">Call Now – (727) 514‑4857</a>
-      <a href="contact.html" class="btn">Request a Quote</a>
-    </div>
-    <div class="hero-image">
-      <img src="images/truck.jpg" alt="Free‑Flow Plumbing truck and excavator at work">
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <!-- EDIT: Update main headline here -->
+        <h2>Full-Service Plumbing &amp; Sewer Line Specialists</h2>
+        <p class="hero-subheadline">From everyday repairs to complex sewer line replacements, Free-Flow Plumbing handles all your residential and light commercial plumbing needs in the Augusta area. Owner-operated, honest pricing, and quality work you can trust.</p>
+
+        <!-- EDIT: Update phone number here -->
+        <div class="hero-cta">
+          <a href="tel:2075551234" class="btn btn-primary">Call Now: (207) 555-1234</a>
+          <a href="#contact" class="btn btn-secondary">Request Service</a>
+        </div>
+
+        <!-- EDIT: Update service hours here -->
+        <p class="service-hours">Available 24/7 for Emergencies | Free Estimates</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/truck.jpg" alt="Free-Flow Plumbing service truck">
+      </div>
     </div>
   </section>
 
-  <!-- Why Choose Section -->
-  <section class="container">
-    <h2 class="section-title">Why Choose Free‑Flow Plumbing?</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <img src="images/sewer_line.png" alt="Sewer line excavation">
-        <div class="service-card-content">
-          <h3>Owner‑Operated</h3>
-          <p>When you hire Free‑Flow Plumbing, you get Scott — not a revolving crew. One master plumber with 16+ years of experience and hundreds of five‑star reviews handles your project from start to finish.</p>
+  <!-- Quick Service Overview -->
+  <section id="services" class="services-overview">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-intro">We're your full-service plumbing partner, handling everything from emergency leaks to complete sewer line replacements.</p>
+
+      <div class="services-grid">
+        <div class="service-card highlight">
+          <img src="images/sewer_line.png" alt="Sewer line replacement equipment">
+          <div class="service-card-content">
+            <h3>Sewer &amp; Drain Line Replacement</h3>
+            <p>Our specialty: complete sewer line replacements, camera inspections, trenchless repairs, and drain line installations. We handle permits, minimize landscape disruption, and deliver clean, code-compliant work.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="images/construction_addition.png" alt="Emergency plumbing service">
+          <div class="service-card-content">
+            <h3>Emergency Plumbing</h3>
+            <p>Burst pipes, major leaks, or sewer backups? We respond quickly to minimize damage and get your plumbing back in working order, day or night.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="images/second_story.png" alt="Water heater installation">
+          <div class="service-card-content">
+            <h3>Water Heaters</h3>
+            <p>Installation, repair, and replacement of traditional tank and tankless water heaters. We'll help you choose the right system for your home and budget.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="images/storm_drain.png" alt="Drain cleaning service">
+          <div class="service-card-content">
+            <h3>Drain Cleaning</h3>
+            <p>Stubborn clogs in sinks, tubs, toilets, or main lines? Professional drain cleaning and hydro-jetting to restore proper flow without damaging your pipes.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="images/construction_addition.png" alt="General plumbing repairs">
+          <div class="service-card-content">
+            <h3>General Plumbing &amp; Repairs</h3>
+            <p>Fixture installations, pipe repairs, leak detection, repiping, winterization, and all routine plumbing maintenance and repairs.</p>
+          </div>
         </div>
       </div>
-      <div class="service-card">
-        <img src="images/storm_drain.png" alt="Storm drain excavation equipment">
-        <div class="service-card-content">
+    </div>
+  </section>
+
+  <!-- Sewer Line Specialty Section -->
+  <section id="sewer-specialty" class="sewer-specialty">
+    <div class="container">
+      <h2 class="section-title">Sewer Line Replacement Specialists</h2>
+      <div class="sewer-content">
+        <div class="sewer-info">
+          <h3>Why Sewer Lines Matter</h3>
+          <p>Your sewer line is one of the most critical—and overlooked—parts of your plumbing system. When it fails, it can cause sewage backups, foundation damage, and costly emergency repairs. That's why we've made sewer line replacement a key specialty.</p>
+
+          <h3>Warning Signs You Need Sewer Line Service</h3>
+          <ul class="warning-signs">
+            <li>Frequent drain backups or slow drains throughout the house</li>
+            <li>Gurgling sounds from toilets or drains</li>
+            <li>Sewage odors in your yard or basement</li>
+            <li>Patches of unusually green or soggy grass in the yard</li>
+            <li>Multiple plumbing fixtures backing up at once</li>
+            <li>Foundation cracks or settling</li>
+          </ul>
+
+          <h3>Our Sewer Line Process</h3>
+          <ul class="process-list">
+            <li><strong>Camera Inspection:</strong> We start with a video inspection to pinpoint the exact problem—roots, breaks, corrosion, or collapse.</li>
+            <li><strong>Clear Estimate:</strong> You'll get an upfront, detailed quote with no hidden fees.</li>
+            <li><strong>Permit Handling:</strong> We obtain all necessary permits and ensure the work meets local code.</li>
+            <li><strong>Professional Excavation:</strong> We minimize disruption to your landscaping and restore the site when we're done.</li>
+            <li><strong>Quality Materials:</strong> Modern, durable pipe materials designed to last decades.</li>
+            <li><strong>Final Inspection:</strong> We test everything and walk you through the completed work.</li>
+          </ul>
+
+          <p class="sewer-cta-text">Sewer line replacement is a significant investment, but it protects your home's value and your family's health. We treat every job with the care and expertise it deserves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Service Plumbing Section -->
+  <section id="full-service" class="full-service">
+    <div class="container">
+      <h2 class="section-title">Complete Plumbing Services</h2>
+      <p class="section-intro">While we specialize in sewer lines, we're your go-to plumber for every plumbing need:</p>
+
+      <div class="service-columns">
+        <div class="service-column">
+          <h3>Residential Plumbing</h3>
+          <ul>
+            <li>Leak detection and repair</li>
+            <li>Faucet and fixture installation</li>
+            <li>Toilet repair and replacement</li>
+            <li>Shower and tub installations</li>
+            <li>Sink and garbage disposal service</li>
+            <li>Water line repairs and replacements</li>
+          </ul>
+        </div>
+
+        <div class="service-column">
+          <h3>System Upgrades</h3>
+          <ul>
+            <li>Whole-house repiping</li>
+            <li>Water heater installation &amp; replacement</li>
+            <li>Sump pump installation</li>
+            <li>Backflow prevention</li>
+            <li>Pipe insulation and winterization</li>
+            <li>Water pressure regulation</li>
+          </ul>
+        </div>
+
+        <div class="service-column">
+          <h3>Drain &amp; Sewer Services</h3>
+          <ul>
+            <li>Drain cleaning and clog removal</li>
+            <li>Hydro-jetting for tough blockages</li>
+            <li>Sewer camera inspections</li>
+            <li>Sewer line repair and replacement</li>
+            <li>Storm drain installation</li>
+            <li>Septic system connections</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Sets Free-Flow Apart -->
+  <section id="why-choose-us" class="why-choose-us">
+    <div class="container">
+      <h2 class="section-title">What Sets Free-Flow Plumbing Apart</h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✓</div>
+          <h3>Owner-Operated</h3>
+          <p>When you call Free-Flow Plumbing, you get Scott—not a rotating crew of subcontractors. You'll work directly with an experienced, licensed plumber who takes personal responsibility for every job.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">$</div>
+          <h3>Clear, Upfront Pricing</h3>
+          <p>No surprises, no hidden fees. We provide detailed estimates before we start work, so you know exactly what you're paying for. Our pricing is fair, competitive, and transparent.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⏰</div>
+          <h3>On-Time &amp; Reliable</h3>
+          <p>We respect your time. When we schedule an appointment, we show up when promised. If an emergency pushes us back, we'll call ahead and keep you informed.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🏠</div>
+          <h3>Respect for Your Home</h3>
+          <p>We treat your home like our own—using drop cloths, cleaning up thoroughly, and minimizing disruption. You'll never find muddy boots on your floors or tools left scattered around.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
           <h3>Licensed &amp; Insured</h3>
-          <p>Fully licensed in the State of Florida (CFC1427962) with county credentials in Pasco (#018526) and Pinellas (I‑CFC1427962), plus an A+ BBB rating and full insurance for your peace of mind.</p>
+          <p>Fully licensed master plumber with up-to-date credentials and comprehensive insurance. You can trust that the work is done right and you're protected.</p>
         </div>
-      </div>
-      <div class="service-card">
-        <img src="images/construction_addition.png" alt="Trenching and new construction rough‑in">
-        <div class="service-card-content">
-          <h3>Specialised Expertise</h3>
-          <p>Beyond basic repairs, we handle complex sewer replacements, storm water drainage, rough‑ins for additions and new builds, repipes and high‑efficiency water heaters.</p>
-        </div>
-      </div>
-      <div class="service-card">
-        <img src="images/second_story.png" alt="Second story addition rough‑in">
-        <div class="service-card-content">
-          <h3>Fair, Honest Pricing</h3>
-          <p>Upfront estimates, competitive rates and no hidden fees. Ask about our free at‑home consultations and 10 % discount on your first service call.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Services Overview -->
-  <section class="container">
-    <h2 class="section-title">Our Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <img src="images/sewer_line.png" alt="Sewer line replacement">
-        <div class="service-card-content">
-          <h3>Sewer &amp; Drain</h3>
-          <p>Sewer line replacement, drain cleaning, camera inspections and trenchless repairs. We minimise disturbance to your landscaping while solving the root cause.</p>
-          <a href="services.html#sewer">Learn more</a>
-        </div>
-      </div>
-      <div class="service-card">
-        <img src="images/construction_addition.png" alt="New construction plumbing">
-        <div class="service-card-content">
-          <h3>Construction &amp; Additions</h3>
-          <p>Complete rough‑ins for additions, garage conversions, pool houses and new builds. We work with homeowners and builders to meet code and schedule.</p>
-          <a href="services.html#construction">Learn more</a>
-        </div>
-      </div>
-      <div class="service-card">
-        <img src="images/storm_drain.png" alt="Excavation and storm drains">
-        <div class="service-card-content">
-          <h3>Excavation &amp; Drainage</h3>
-          <p>Storm water drain installation, trenching and grading. Proper drainage protects your property and prevents flooding — we do it right.</p>
-          <a href="services.html#excavation">Learn more</a>
-        </div>
-      </div>
-      <div class="service-card">
-        <img src="images/second_story.png" alt="Plumbing repairs and water heaters">
-        <div class="service-card-content">
-          <h3>Repairs &amp; Water Heaters</h3>
-          <p>General plumbing repairs, fixture installations, repipes and high‑efficiency water heater installation and service.</p>
-          <a href="services.html#repairs">Learn more</a>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Honest Recommendations</h3>
+          <p>We'll never upsell you on services you don't need. If a simple repair will do the job, that's what we'll recommend. Our reputation is built on trust, not high-pressure sales.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section class="testimonials">
+  <section id="testimonials" class="testimonials">
     <div class="container">
-      <h2 class="section-title">Customer Testimonials</h2>
+      <h2 class="section-title">What Our Customers Say</h2>
+
+      <!-- EDIT: Replace with real customer testimonials -->
       <div class="testimonial-list">
         <div class="testimonial">
-          <p>“Communication was excellent and the service was professional, honest and fair.  Scott and his team did not disappoint!”</p>
-          <span>– Tracy A.</span>
+          <p>"We had a sewer line emergency on a Saturday morning. Scott responded within the hour, diagnosed the problem with a camera inspection, and had a plan in place by that afternoon. The replacement was done professionally, and our yard looked better than before he started. Highly recommend!"</p>
+          <span>– Sarah M., Augusta, ME</span>
         </div>
+
         <div class="testimonial">
-          <p>“Scott, the owner‑operator, shows up when he says he will, knows the local codes and offers a fair price.  He replaced our exterior sewer piping.”</p>
-          <span>– Susan A.</span>
+          <p>"After getting quotes from three other plumbers, Free-Flow was the only one who took the time to explain exactly what was wrong and why. No scare tactics, just honest advice. The price was fair, and Scott's work was meticulous. We'll be calling him for all our plumbing needs."</p>
+          <span>– Michael T., Waterville, ME</span>
         </div>
+
         <div class="testimonial">
-          <p>“They diagnosed our hidden leak over the phone and arrived within 30 minutes.  Professional, detailed and resolved the problem the next day.”</p>
-          <span>– Eric C.</span>
+          <p>"I called about a leaky water heater expecting a huge bill. Scott showed up on time, fixed it in under an hour, and charged exactly what he quoted over the phone. It's rare to find a tradesperson this straightforward and reliable. I've already recommended him to neighbors."</p>
+          <span>– Jennifer L., Winthrop, ME</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="container">
-    <h2 class="section-title">Ready to Get Started?</h2>
-    <p style="text-align:center;">Whether you’re facing a sewer emergency, planning a remodel or building a new addition, Free‑Flow Plumbing is here to help.  Call today or request a quote and get the owner on the job.</p>
-    <div style="text-align:center;">
-      <a href="tel:7275144857" class="btn">Call (727) 514‑4857</a>
-      <a href="contact.html" class="btn">Send a Message</a>
+  <!-- Service Area Section -->
+  <section id="service-area" class="service-area">
+    <div class="container">
+      <h2 class="section-title">Serving the Greater Augusta Area</h2>
+      <p class="section-intro">Free-Flow Plumbing proudly serves homeowners and businesses throughout central Maine.</p>
+
+      <!-- EDIT: Update service area towns here -->
+      <div class="service-towns">
+        <ul>
+          <li>Augusta</li>
+          <li>Waterville</li>
+          <li>Winthrop</li>
+          <li>Gardiner</li>
+          <li>Hallowell</li>
+          <li>Manchester</li>
+          <li>Belgrade</li>
+          <li>Sidney</li>
+          <li>Chelsea</li>
+          <li>Monmouth</li>
+          <li>Readfield</li>
+          <li>Wayne</li>
+        </ul>
+        <p class="service-area-note">Don't see your town listed? Give us a call—we may still be able to help!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer emergency service?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Plumbing emergencies don't wait for business hours. We offer 24/7 emergency service for urgent issues like burst pipes, sewer backups, and major leaks. Call us anytime, and we'll respond as quickly as possible to minimize damage to your home.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I know if I need a sewer line replacement?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Common signs include frequent backups, slow drains throughout the house, sewage odors, soggy patches in your yard, or gurgling sounds from drains. We can perform a camera inspection to pinpoint the issue and recommend the best solution—sometimes a repair is all that's needed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you provide free estimates?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we provide free, no-obligation estimates for most jobs. For larger projects like sewer line replacements or repiping, we'll schedule a time to visit your property, assess the situation, and provide a detailed written estimate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What types of payment do you accept?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We accept cash, checks, and all major credit cards. For larger projects, we can discuss payment plans or financing options to make the work more manageable for your budget.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are you licensed and insured?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Free-Flow Plumbing is fully licensed as a master plumber in the state of Maine and carries comprehensive liability insurance and workers' compensation coverage. You can have complete peace of mind knowing you're protected.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does a typical sewer line replacement take?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Most residential sewer line replacements take 1-3 days, depending on the length of the line, soil conditions, and permit requirements. We'll give you a clear timeline during the estimate, and we always work efficiently to minimize disruption to your daily routine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">Ready to schedule service or have questions? Reach out today.</p>
+
+      <div class="contact-info">
+        <!-- EDIT: Update contact details here -->
+        <div class="contact-item">
+          <h3>Phone</h3>
+          <p><a href="tel:2075551234">(207) 555-1234</a></p>
+          <p class="contact-note">Available 24/7 for emergencies</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p><a href="mailto:scott@freeflowplumbing.com">scott@freeflowplumbing.com</a></p>
+          <p class="contact-note">We'll respond within 24 hours</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Service Area</h3>
+          <p>Augusta, ME &amp; Surrounding Towns</p>
+          <p class="contact-note">See full service area above</p>
+        </div>
+      </div>
+
+      <div class="cta-final">
+        <a href="tel:2075551234" class="btn btn-primary btn-large">Call Now for Service</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div>
-        <h4>Contact</h4>
-        <p>Free‑Flow Plumbing, Inc.</p>
-        <p>New Port Richey, FL 34655</p>
-        <p><a href="tel:7275144857">(727) 514‑4857</a></p>
-        <p><a href="mailto:freeflow1979@gmail.com">freeflow1979@gmail.com</a></p>
+      <div class="footer-column">
+        <h4>Free-Flow Plumbing</h4>
+        <p>Full-service residential and light commercial plumbing serving the greater Augusta, Maine area.</p>
+        <p class="footer-tagline">Owner-operated. Licensed. Trusted.</p>
       </div>
-      <div>
-        <h4>Service Areas</h4>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
         <ul>
-          <li>New Port Richey</li>
-          <li>Trinity &amp; Odessa</li>
-          <li>Tarpon Springs &amp; Dunedin</li>
-          <li>Palm Harbor &amp; Clearwater</li>
-          <li>Hudson &amp; Holiday</li>
-          <li>Surrounding West Pasco &amp; Pinellas communities</li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#sewer-specialty">Sewer Line Replacement</a></li>
+          <li><a href="#why-choose-us">Why Choose Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div>
+
+      <div class="footer-column">
+        <!-- EDIT: Update license/credential info here -->
         <h4>Credentials</h4>
-        <p>License: FL CFC1427962</p>
-        <p>Pasco County: 018526</p>
-        <p>Pinellas County: I‑CFC1427962</p>
-        <p>16+ years in business【366414939495232†L249-L252】</p>
-        <p>Emergency services &amp; free estimates【366414939495232†L215-L216】</p>
+        <p>Licensed Master Plumber</p>
+        <p>State of Maine License: [License #]</p>
+        <p>Fully Insured</p>
+        <p>Years in Business: [Years]</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p><a href="tel:2075551234">(207) 555-1234</a></p>
+        <p><a href="mailto:scott@freeflowplumbing.com">scott@freeflowplumbing.com</a></p>
+        <p>Augusta, ME</p>
       </div>
     </div>
-    <p style="text-align:center; margin-top:1rem; font-size:0.8rem;">© 2025 Free‑Flow Plumbing, Inc.  All rights reserved.</p>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Free-Flow Plumbing. All rights reserved.</p>
+    </div>
   </footer>
+
   <!-- Sticky call button for mobile -->
-  <a href="tel:7275144857" class="call-sticky">Call Now</a>
+  <a href="tel:2075551234" class="call-sticky" aria-label="Call Free-Flow Plumbing">📞 Call Now</a>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>
